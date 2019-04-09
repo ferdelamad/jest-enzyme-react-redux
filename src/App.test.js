@@ -2,11 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App, { Link } from "./App";
 
-import { configure, shallow } from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
+import { shallow } from "enzyme";
 import toJson from "enzyme-to-json";
-
-configure({ adapter: new Adapter() });
 
 describe("<App />", () => {
   it("should contain 1 p element", () => {
